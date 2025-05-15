@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Surat untuk <%= name %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Untuk <%= name %></h2>
+    <p><%= content %></p>
+    <form action="/reply" method="POST">
+      <input type="hidden" name="name" value="<%= name %>">
+      <textarea name="message" placeholder="Balasanmu..."></textarea><br>
+      <button type="submit">Kirim Balasan</button>
+    </form>
+  </div>
+</body>
+</html>
